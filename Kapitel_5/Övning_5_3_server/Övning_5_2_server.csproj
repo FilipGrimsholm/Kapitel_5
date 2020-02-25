@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D1D35BE-E57D-416B-B73A-D931674388D5}</ProjectGuid>
+    <ProjectGuid>{CEBE6F9F-489B-446F-8B74-6606D131A658}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Genomgång</RootNamespace>
-    <AssemblyName>Genomgång</AssemblyName>
+    <RootNamespace>Övning_5_3_server</RootNamespace>
+    <AssemblyName>Övning_5_3_server</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
