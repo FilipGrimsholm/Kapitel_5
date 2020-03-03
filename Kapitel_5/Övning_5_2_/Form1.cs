@@ -24,23 +24,38 @@ namespace Övning_5_2_
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            if (klient.Connected)
+            try
             {
-                byte[] utdata = Encoding.Unicode.GetBytes("Hej!");
-                klient.GetStream().Write(utdata, 0, utdata.Length);
-                klient.Close(),
+                string meddelande = tbxMeddelande.Text;
+                if (klient.Connected)
+                {
+                    byte[] utdata = Encoding.Unicode.GetBytes(meddelande);
+                    klient.GetStream().Write(utdata, 0, utdata.Length);
+                    klient.Close();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error!");
             }
         }
 
         private void btnAnslut_Click(object sender, EventArgs e)
         {
-            IPAddress adress = IPAddress.Parse(tbxIPaddress.Text);
+            try
+            {
+                IPAddress adress = IPAddress.Parse(tbxIPaddress.Text);
 
-            klient = new TcpClient();
-            klient.NoDelay = true;
-            klient.Connect(adress, port);
+                klient = new TcpClient();
+                klient.NoDelay = true;
+                klient.Connect(adress, port);
 
-            btnAnslut.Enabled = false;
+                btnAnslut.Enabled = false;
+            }
+            catch
+            {
+                MessageBox.Show("Gick inte att connecta till servern!");
+            }
         }
     }
 }

@@ -25,23 +25,37 @@ namespace Övning_5_3_server
 
         private void btnStartaServer_Click(object sender, EventArgs e)
         {
-            lyssnare = new TcpListener(IPAddress.Any, port);
-            lyssnare.Start();
+            try
+            {
+                lyssnare = new TcpListener(IPAddress.Any, port);
+                lyssnare.Start();
 
-            btnStartaServer.Enabled = false;
+                btnStartaServer.Enabled = false;
+            }
+            catch
+            {
+                MessageBox.Show("Error!");
+            }
         }
 
         private void btnTaEmot_Click(object sender, EventArgs e)
         {
-            //Väntar på Connect i klienten:
-            klient = lyssnare.AcceptTcpClient();
-            byte[] inData = new byte[256];
+            try
+            {
+                //Väntar på Connect i klienten:
+                klient = lyssnare.AcceptTcpClient();
+                byte[] inData = new byte[256];
 
-            //Väntar på Send i klienten:
-            int antalbyte = klient.GetStream().Read(inData, 0, inData.Length);
-            tbxInkorg.Text = Encoding.Unicode.GetString(inData, 0, antalbyte);
-            klient.Close();
-            lyssnare.Stop();
+                //Väntar på Send i klienten:
+                int antalbyte = klient.GetStream().Read(inData, 0, inData.Length);
+                tbxInkorg.Text = Encoding.Unicode.GetString(inData, 0, antalbyte);
+                klient.Close();
+                lyssnare.Stop();
+            }
+            catch
+            {
+
+            }
         }
     }
 }
