@@ -54,7 +54,7 @@ namespace Övning_5_3_server
             }
             catch
             {
-
+                MessageBox.Show("Error!");
             }
         }
     }
