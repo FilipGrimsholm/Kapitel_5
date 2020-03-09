@@ -1,4 +1,4 @@
-﻿namespace Övning_5_3_klient
+﻿namespace Övning_5_3_server__2_
 {
     partial class Form1
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Övning_5_3_klient
+namespace Övning_5_3_server__2_
 {
     public partial class Form1 : Form
     {

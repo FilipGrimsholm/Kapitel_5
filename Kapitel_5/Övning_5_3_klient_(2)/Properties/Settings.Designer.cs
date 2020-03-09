@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Övning_5_3_klient.Properties
+namespace Övning_5_3_klient__2_.Properties
 {
 
 

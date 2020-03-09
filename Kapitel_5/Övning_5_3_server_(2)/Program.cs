@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Övning_5_3_klient
+namespace Övning_5_3_server__2_
 {
     static class Program
     {
