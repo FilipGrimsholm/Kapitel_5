@@ -16,7 +16,7 @@ namespace Övning_5_3_server__2_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmServer());
         }
     }
 }
