@@ -25,7 +25,7 @@ namespace Övning_5_4_klient
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            tbxIPadress.Text = "127.0.0.1";
         }
 
         private async void btnAnslut_Click(object sender, EventArgs e)

@@ -41,6 +41,7 @@
             this.tbxInkorg.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.tbxInkorg.Size = new System.Drawing.Size(377, 199);
             this.tbxInkorg.TabIndex = 1;
+            this.tbxInkorg.TextChanged += new System.EventHandler(this.tbxInkorg_TextChanged);
             // 
             // gbxInkorg
             // 

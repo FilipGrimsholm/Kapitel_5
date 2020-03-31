@@ -54,7 +54,7 @@ namespace Övning_5_4_server
                 int antalbyte = await klient.GetStream().ReadAsync(indata, 0, indata.Length);
 
                 //Hämtar meddelandet ur indata och flyttar bilden
-                string meddelande = Encoding.Unicode.GetString(indata);
+                string meddelande = Encoding.Unicode.GetString(indata, 0, antalbyte);
                 MovePicture(meddelande);
 
                 //Rensar indata
@@ -71,8 +71,6 @@ namespace Övning_5_4_server
 
         private void MovePicture(string meddelande)
         {
-            MessageBox.Show(meddelande);
-
             int movement = 5;
             int Xlocation = pbxCar.Location.X;
             int Ylocation = pbxCar.Location.Y;
@@ -95,7 +93,7 @@ namespace Övning_5_4_server
             }
             else
             {
-                MessageBox.Show("Step 6");
+                MessageBox.Show("Error!");
             }
         }
     }

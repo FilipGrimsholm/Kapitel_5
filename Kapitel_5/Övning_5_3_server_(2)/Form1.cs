@@ -69,5 +69,10 @@ namespace Övning_5_3_server__2_
                 return;
             }
         }
+
+        private void tbxInkorg_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
