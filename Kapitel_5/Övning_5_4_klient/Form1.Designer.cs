@@ -39,6 +39,7 @@
             // 
             // btnUpp
             // 
+            this.btnUpp.Enabled = false;
             this.btnUpp.Location = new System.Drawing.Point(155, 100);
             this.btnUpp.Name = "btnUpp";
             this.btnUpp.Size = new System.Drawing.Size(75, 23);
@@ -49,6 +50,7 @@
             // 
             // btnVänster
             // 
+            this.btnVänster.Enabled = false;
             this.btnVänster.Location = new System.Drawing.Point(50, 172);
             this.btnVänster.Name = "btnVänster";
             this.btnVänster.Size = new System.Drawing.Size(75, 23);
@@ -59,6 +61,7 @@
             // 
             // btnHöger
             // 
+            this.btnHöger.Enabled = false;
             this.btnHöger.Location = new System.Drawing.Point(249, 172);
             this.btnHöger.Name = "btnHöger";
             this.btnHöger.Size = new System.Drawing.Size(75, 23);
@@ -69,6 +72,7 @@
             // 
             // btnNer
             // 
+            this.btnNer.Enabled = false;
             this.btnNer.Location = new System.Drawing.Point(155, 242);
             this.btnNer.Name = "btnNer";
             this.btnNer.Size = new System.Drawing.Size(75, 23);
