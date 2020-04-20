@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxIPaddress = new System.Windows.Forms.TextBox();
             this.btnAnslut = new System.Windows.Forms.Button();
             this.btnSänd = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,12 +48,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Serverns IP-adress";
             // 
-            // textBox1
+            // tbxIPaddress
             // 
-            this.textBox1.Location = new System.Drawing.Point(129, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.tbxIPaddress.Location = new System.Drawing.Point(129, 25);
+            this.tbxIPaddress.Name = "tbxIPaddress";
+            this.tbxIPaddress.Size = new System.Drawing.Size(100, 20);
+            this.tbxIPaddress.TabIndex = 1;
             // 
             // btnAnslut
             // 
@@ -121,10 +121,10 @@
             this.Controls.Add(this.lbxChatrum);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAnslut);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxIPaddress);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Klient";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbxUtkorg.ResumeLayout(false);
             this.gbxUtkorg.PerformLayout();
@@ -136,7 +136,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxIPaddress;
         private System.Windows.Forms.Button btnAnslut;
         private System.Windows.Forms.Button btnSänd;
         private System.Windows.Forms.Label label2;

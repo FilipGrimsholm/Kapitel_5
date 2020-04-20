@@ -19,9 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning_5_3_klient_(2)", "�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning_5_3_server_(2)", "Övning_5_3_server_(2)\Övning_5_3_server_(2).csproj", "{D311C41A-5B58-484F-8F17-5053DB54DA45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projekt_kap5_klient", "Projekt_kap5_klient\Projekt_kap5_klient.csproj", "{DBE3A65D-29E5-4A84-8E2B-8EED2B24A8DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projekt_kap5_server", "Projekt_kap5_klient\Projekt_kap5_server.csproj", "{DBE3A65D-29E5-4A84-8E2B-8EED2B24A8DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projekt_kap5_server", "Projekt_kap5_server\Projekt_kap5_server.csproj", "{CE05C1C1-D7B5-4F51-AD7D-FEF41F942B3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projekt_kap5_klient", "Projekt_kap5_server\Projekt_kap5_klient.csproj", "{CE05C1C1-D7B5-4F51-AD7D-FEF41F942B3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
